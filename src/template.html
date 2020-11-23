@@ -17,7 +17,7 @@
   <nav class="nav">
 
     <!-- Nav logo -->
-    <a href="#" href="" class="nav__logo">
+    <a href="#" href="#" class="nav__logo">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
@@ -37,16 +37,70 @@
       </svg>
     </div>
 
+    <!-- 1st level menu -->
     <ul class="nav__list">
       <li class="nav__item">
         <a href="#" class="nav__link">
           Home
         </a>
       </li>
-      <li class="nav__item">
+      <li class="nav__item nav__item--alt">
         <a href="#" class="nav__link">
-          Menu
+          Menu <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
         </a>
+
+        <!-- 2nd level menu -->
+        <ul class="nav__sublist">
+          <li class="nav__item nav__sublist__item">
+            <a href="#" class="nav__link">Breakfast</a>
+          </li>
+          <li class="nav__item nav__sublist__item">
+            <a href="#" class="nav__link">Lunch</a>
+          </li>
+          <li class="nav__item nav__item--alt nav__sublist__item">
+            <a href="#" class="nav__link">Dinner <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg></a>
+
+            <!-- 3nd level menu -->
+            <ul class="nav__sublist nav__sublist--alt">
+              <li class="nav__item nav__sublist__item">
+                <a href="#" class="nav__link">Orange Chicken</a>
+              </li>
+              <li class="nav__item nav__sublist__item">
+                <a href="#" class="nav__link">Beijing Beef</a>
+              </li>
+              <li class="nav__item nav__item--alt nav__sublist__item">
+                <a href="#" class="nav__link">More <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg></a>
+
+                <!-- 4th level menu Ends -->
+                <ul class="nav__sublist nav__sublist--alt">
+                  <li class="nav__item nav__sublist__item">
+                    <a href="#" class="nav__link">Broccoli beef</a>
+                  </li>
+                  <li class="nav__item nav__sublist__item">
+                    <a href="#" class="nav__link">Walnut shrimp</a>
+                  </li>
+                  <li class="nav__item nav__item--alt nav__sublist__item">
+                    <a href="#" class="nav__link">Spring roll</a>
+                  </li>
+                </ul>
+                <!-- 4th level menu Ends Ends -->
+
+              </li>
+            </ul>
+            <!-- 3nd level menu Ends -->
+
+          </li>
+        </ul>
+        <!-- 2nd level menu Ends -->
+
       </li>
       <li class="nav__item">
         <a href="#" class="nav__link">
@@ -74,10 +128,9 @@
         </a>
       </li>
     </ul>
+    <!-- 1st level menu Ends -->
 
   </nav>
-  <!-- Nested Menu Ends -->
-
   <!-- Nested Menu Ends -->
 
 
