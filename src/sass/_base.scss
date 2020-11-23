@@ -1,0 +1,33 @@
+$color-primary: #eb3007;
+$color-dark: #191919;
+$color-light: #eee;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  // 10px / 16px = 62.5% : 1rem = 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-light;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
