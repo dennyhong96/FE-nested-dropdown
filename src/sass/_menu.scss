@@ -31,9 +31,7 @@ svg {
   }
 
   &__toggle {
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: none;
   }
 
   // 1st level navlist
@@ -129,13 +127,33 @@ svg {
     width: 100%;
     left: 0;
     top: 0;
-    height: 100%;
+    height: auto;
     transform: initial;
     border-bottom: none;
     flex-direction: column;
     align-items: flex-start;
-    background-color: $color-dark;
     padding: 2rem;
+    background-color: transparent;
+    overflow-y: auto;
+
+    &--active {
+      background-color: $color-dark;
+      min-height: 100%;
+
+      .nav__list {
+        display: flex;
+      }
+
+      .nav__toggle {
+        &--menu {
+          display: none;
+        }
+
+        &--close {
+          display: block;
+        }
+      }
+    }
 
     &__logo {
       margin-left: 1.5rem;
@@ -143,15 +161,31 @@ svg {
     }
 
     &__toggle {
+      display: block;
       position: absolute;
       right: 2rem;
       top: 2rem;
+
+      svg {
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+      }
+
+      &--menu {
+        display: block;
+      }
+
+      &--close {
+        display: none;
+      }
     }
 
     // 1st level navlist
     &__list {
       flex-direction: column;
       line-height: 4rem;
+      display: none;
     }
 
     // Nested sub navlist
